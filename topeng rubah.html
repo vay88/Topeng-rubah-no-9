@@ -1,0 +1,137 @@
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Topeng Rubah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        .rules-list {
+            list-style-type: decimal;
+            padding-left: 1.5rem;
+        }
+        .admin-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img alt="Icon of a fox mask" class="w-12 h-12 mr-3" src="https://storage.googleapis.com/a1aa/image/hbkinPko23tO9kp9MnL7wK0CQPutaDLeGl0kP1PNIeA.jpg"/>
+                <h1 class="text-2xl font-bold text-gray-800">TOPENG RUBAH</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="text-gray-600 hover:text-gray-800" href="#home">Beranda</a></li>
+                    <li><a class="text-gray-600 hover:text-gray-800" href="#about">Tentang Kami</a></li>
+                    <li><a class="text-gray-600 hover:text-gray-800" href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Form Section -->
+        <section id="home" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">FORM PENDAFTARAN</h2>
+            <form class="space-y-4" id="introForm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Nama Lengkap</label>
+                        <input class="w-full p-2 border border-gray-300 rounded" type="text" required/>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Umur</label>
+                        <input class="w-full p-2 border border-gray-300 rounded" type="number" required/>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Alamat</label>
+                        <input class="w-full p-2 border border-gray-300 rounded" type="text" required/>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Kelas</label>
+                        <input class="w-full p-2 border border-gray-300 rounded" type="text" required/>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Pekerjaan</label>
+                    <input class="w-full p-2 border border-gray-300 rounded" type="text" required/>
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-2">Alasan Masuk Topeng Rubah</label>
+                    <textarea class="w-full p-2 border border-gray-300 rounded h-32" required></textarea>
+                </div>
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" type="submit">
+                    KIRIM PENDAFTARAN
+                </button>
+            </form>
+        </section>
+
+        <!-- Tentang Kami Section -->
+        <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">TENTANG KAMI</h2>
+            
+            <div class="mb-8">
+                <p class="text-lg font-semibold mb-4">𝙎𝙀𝙇𝘼𝙈𝘼𝙏 𝘿𝘼𝙏𝘼𝙉𝙂 𝘿𝙄 𝙏𝙊𝙋𝙀𝙉𝙂 𝙍𝙐𝘽𝘼𝙃</p>
+                <p class="text-gray-600 mb-6">𝙔𝙊𝙆𝙊𝙎𝙊 𝙈𝙄𝙉𝙉𝘼</p>
+                
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">𝘼𝘿𝙈𝙄𝙉 𝙏𝙀𝘼𝙈:</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="admin-card">
+                            <p class="font-semibold">𝙔𝙪𝙪𝙯𝙚 𝙆𝙖𝙜𝙖𝙢𝙞</p>
+                            <p class="text-gray-600">||𝙆𝙚𝙩𝙪𝙖 𝙗𝙚𝙗𝙖𝙣||</p>
+                        </div>
+                        <div class="admin-card">
+                            <p class="font-semibold">𝙀𝙡𝙚𝙣𝙖 𝙫𝙚𝙡𝙚𝙣𝙨𝙞𝙖</p>
+                            <p class="text-gray-600">||𝙬𝙖𝙠𝙞𝙡||</p>
+                        </div>
+                        <!-- Tambahkan admin lainnya dengan pola yang sama -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-bold mb-4">𝙍𝙐𝙇𝙀𝙎 𝙂𝙍𝙐𝙋:</h3>
+                <ol class="rules-list space-y-3 text-gray-700">
+                    <li>𝗗𝗶𝘀𝗸𝘂𝘀𝗶 𝘆𝗮𝗻𝗴 𝗽𝗲𝗻𝘁𝗶𝗻𝗴</li>
+                    <li>𝗝𝗮𝗻𝗴𝗮𝗻 𝗯𝗲𝗿𝗵𝗶𝗮𝗻𝗮𝘁</li>
+                    <li>𝗝𝗮𝗻𝗴𝗮𝗻 𝗯𝗲𝗿𝘁𝗲𝗻𝗴𝗸𝗮𝗿</li>
+                    <li>𝗧𝗼𝗽𝗲𝗻𝗴 𝗿𝘂𝗯𝗮𝗵 𝘁𝗲𝘁𝗮𝗽 𝗮𝗱𝗮</li>
+                    <li>𝗝𝗮𝗻𝗴𝗮𝗻 𝗸𝗲𝗹𝘂𝗮𝗿 𝗮𝘄𝗮𝘀 𝗮𝗷𝗮 𝗹𝘂</li>
+                    <li>𝗕𝗮𝘆𝗮𝗿 𝘂𝗮𝗻𝗴 𝗸𝗮𝘀 𝘀𝗲𝘁𝗶𝗮𝗽 𝘀𝗲𝗻𝗶𝗻</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-8">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <p class="text-sm">© 2023 TOPENG RUBAH. All rights reserved.</p>
+            <p class="text-sm mt-2">Dibangun dengan ❤️ oleh Tim Topeng Rubah</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('introForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const message = `▀▄▀▄Intro dulu cuy.▄▀▄▀%0A%0A
+                Nama: ${formData.get('name')}%0A
+                Umur: ${formData.get('age')}%0A
+                Alamat: ${formData.get('address')}%0A
+                Kelas: ${formData.get('class')}%0A
+                Pekerjaan: ${formData.get('job')}%0A%0A
+                Alasan Masuk:%0A${formData.get('reason')}`;
+
+            window.location.href = `https://wa.me/6285824390625?text=${encodeURIComponent(message)}`;
+        });
+    </script>
+</body>
+</html>
